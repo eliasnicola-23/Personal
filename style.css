@@ -1,0 +1,555 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+body {
+    background-color: black;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Estilos para el encabezado */
+.encabezado {
+    background-color: #1e8f2f; /* Fondo azul petróleo */
+    border-radius: 30px;
+    padding: 40px 20px; /* Espaciado interno: 40px arriba/abajo y 20px a los lados */
+    text-align: center; /* Centra todo el contenido del encabezado */
+    border-bottom: 2px solid #1d7a2b; /* Línea inferior para separar visualmente el encabezado */
+}
+
+/* Estilos para el título dentro del encabezado */
+.contenido-encabezado h1 {
+    margin-bottom: 20px; /* Espacio debajo del título */
+    font-size: 2.5em; /* Tamaño grande del texto */
+}
+
+/* Estilos del botón para ver o descargar el CV */
+.boton-cv {
+    background-color: #ffffff; /* Fondo blanco */
+    color: #37218f; /* Texto en azul petróleo */
+    border: none; /* Sin borde visible */
+    padding: 12px 24px; /* Espacio interno del botón (alto x ancho) */
+    border-radius: 30px; /* Bordes redondeados tipo "pastilla" */
+    font-weight: bold; /* Texto en negrita */
+    font-size: 1em; /* Tamaño del texto */
+    cursor: pointer; /* Cambia el cursor a "manito" al pasar por encima */
+    transition: all 0.3s ease; /* Transición suave para efectos de hover */
+}
+
+/* Estilo cuando el mouse pasa por encima del botón */
+.boton-cv:hover {
+    background-color: #37218f; /* Cambia el fondo a un azul más oscuro */
+    color: white; /* Cambia el color del texto a blanco */
+    transform: scale(1.05); /* Hace un leve zoom (5% más grande) */
+}
+
+
+h1 {
+    text-align: center; /* Centra el texto */
+    font-size: 3em; /* Lo agranda (1em es el tamaño base, 3em = 3 veces más) */
+    margin-top: 40px; /* Espacio arriba del título */
+    margin-bottom: 20px; /* Espacio debajo del título */
+}
+
+.contenedor-perfil {
+    display: flex; /* Alinea los hijos en fila */
+    justify-content: space-between; /* Separa el texto y la imagen */
+    align-items: center;  /* Centra verticalmente */
+    padding: 40px; /* Espacio alrededor del contenido */
+    gap: 30px;  /* Espacio entre texto e imagen */
+    flex-wrap: wrap; /* Permite que se acomode en pantallas chicas */
+}
+
+.texto-perfil {
+    flex: 1; /* Ocupa todo el espacio disponible */
+    min-width: 300px; /* Mínimo ancho para que no se achique demasiado */
+    background-color: #1e8f2f; /* Fondo del cuadro */
+    padding: 30px;  /* Espaciado interno */
+    border-radius: 30px; /* Bordes redondeados */
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1); /* Sombra suave */
+    transition: background-color 0.3s ease; /* Transición si querés después agregar efecto hover */
+}
+
+.texto-perfil:hover {
+    background-color: #37218f; /* Cambia el fondo a un azul más oscuro */
+}
+
+.foto-perfil img {
+    width: 272px;  /* Tamaño de la imagen */
+    border-radius: 30px; /* Bordes redondeados */
+    margin-bottom: 0;/* Sombra blanca suave */
+}
+
+/* Estilo general para la sección Educación */
+.Educacion {
+    background-color: #121212; /* Fondo oscuro para que resalte el contenido */
+    padding: 30px 20px; /* Espacio interno arriba/abajo y a los lados */
+    border-radius: 15px; /* Bordes redondeados para un estilo más moderno */
+    box-shadow: 0 4px 15px rgba(30, 143, 47, 0.4); /* Sombra verde suave para profundidad */
+    max-width: 900px; /* Ancho máximo para que no se estire demasiado */
+    margin: 0 auto 60px auto; /* Centra horizontalmente y agrega margen abajo */
+    color: white; /* Color del texto dentro de la sección */
+}
+
+/* Estilo para el título h2 dentro de la sección Educación */
+.Educacion h2 {
+    font-size: 2.4em; /* Tamaño grande para el título */
+    font-weight: 700; /* Texto en negrita */
+    margin-bottom: 25px; /* Espacio debajo del título */
+    text-align: center; /* Centra el título horizontalmente */
+    transition: color 0.3s ease; /* Transición suave para el cambio de color al hacer hover */
+}
+
+/* Cambia el color del título cuando pasás el cursor por encima */
+.Educacion h2:hover {
+    color: #37218f; /* Morado para destacar la interacción */
+}
+
+/* Estilo general para cada ítem dentro de educación */
+.item-educacion {
+    margin-bottom: 30px; /* Espacio debajo de cada ítem */
+    border-left: 4px solid #1e8f2f; /* Línea vertical verde a la izquierda */
+    padding-left: 15px; /* Separación entre línea y contenido */
+    transition: border-color 0.3s ease; /* Transición suave para cambio de color de la línea */
+}
+
+/* Cambia el color de la línea izquierda cuando pasás el cursor por encima */
+.item-educacion:hover {
+    border-left-color: #37218f; /* Morado en la línea vertical al hacer hover */
+}
+
+/* Estilo para los títulos h3 dentro de cada ítem */
+.item-educacion h3 {
+    font-size: 1.3em; /* Tamaño un poco más grande para subtítulos */
+    margin-bottom: 5px; /* Espacio debajo del subtítulo */
+    color: #1e8f2f; /* Verde principal para los subtítulos */
+    transition: color 0.3s ease; /* Transición suave para el cambio de color al hacer hover */
+}
+
+/* Cambia el color del subtítulo h3 al pasar el cursor */
+.item-educacion h3:hover {
+    color: #37218f; /* Morado para destacar la interacción */
+}
+
+/* Estilo para los párrafos dentro de cada ítem */
+.item-educacion p {
+    font-style: italic; /* Texto en cursiva para diferenciar */
+    font-size: 1em; /* Tamaño de texto normal */
+    color: #c0c0c0; /* Gris claro para texto secundario */
+    margin-bottom: 8px; /* Espacio debajo de cada párrafo */
+}
+
+/* Estilo para las listas dentro de la sección Educación */
+.Educacion ul {
+    list-style-type: disc; /* Viñetas tradicionales (círculos) */
+    padding-left: 25px; /* Sangría para las viñetas */
+    color: #d6d6d6; /* Color gris claro para los textos de la lista */
+    font-size: 1.1em; /* Tamaño de texto un poco más grande para legibilidad */
+}
+
+/* Animación inicial para ocultar los elementos */
+.fade-in-section {
+  opacity: 0; /* Hace que el elemento sea completamente transparente al inicio */
+  transform: translateY(20px); /* Mueve el elemento 20px hacia abajo para crear efecto de desplazamiento */
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out; /* Define la transición suave de opacidad y posición en 0.8 segundos */
+  will-change: opacity, transform; /* Optimiza el rendimiento avisando al navegador que estos atributos cambiarán */
+}
+
+/* Cuando el elemento es visible, aplica la animación */
+.fade-in-section.is-visible {
+  opacity: 1; /* El elemento pasa a ser completamente visible */
+  transform: none; /* El elemento vuelve a su posición original sin desplazamiento */
+}
+
+/* Sección de experiencia profesional */
+.experiencia {
+  padding: 60px 20px; /* Espaciado general */
+  background-color: #000000; /* Fondo blanco para contrastar */
+  border-top: 2px solid #e0e0e0; /* Línea divisoria con la sección anterior */
+}
+
+/* Título con ícono */
+.experiencia h2 {
+  font-size: 2.3em;
+  color: #1e8f2f; /* Verde principal */
+  display: flex; /* Para que el ícono y el texto estén en línea */
+  align-items: center;
+  gap: 10px; /* Espacio entre ícono y texto */
+  margin-bottom: 40px;
+  justify-content: center; /* Centrado en la página */
+}
+
+/* Cada experiencia */
+.item-experiencia {
+  margin-bottom: 30px; /* Espacio entre bloques */
+  padding: 20px;
+  border-left: 4px solid #1e8f2f; /* Línea verde a la izquierda */
+  background-color: #797575; /* Fondo gris claro */
+  border-radius: 8px; /* Bordes redondeados */
+}
+
+/* Título de cada trabajo */
+.item-experiencia h3 {
+  font-size: 1.3em;
+  color: #61ef61; /* Azul como el hover */
+  margin-bottom: 5px;
+}
+
+/* Fecha */
+.fecha {
+  font-style: italic;
+  color: #8a8989;
+  margin-bottom: 10px;
+}
+
+/* Lista de tareas/responsabilidades */
+.item-experiencia ul {
+  padding-left: 20px;
+  line-height: 1.6; /* Espaciado entre líneas */
+}
+
+.habilidades {
+  padding: 60px 20px; /* Espaciado general */
+  background-color: #000000; /* Fondo blanco para contrastar */
+  border-top: 2px solid #e0e0e0; /* Línea divisoria con la sección anterior */
+}
+ 
+/* Sección general */
+.habilidades {
+  padding: 60px 20px;               /* Espacio interno arriba/abajo (60px) y a los lados (20px) */
+  background-color: #000000;        /* Fondo blanco para la sección */
+  text-align: left;               /* Centra el texto horizontalmente */
+  color: #37218f;
+}
+
+/* Título con ícono */
+.habilidades h2 {
+  font-size: 2.3em;                 /* Tamaño grande de fuente (em es relativo) */
+  color: #1e8f2f;                   /* Color verde personalizado */
+  display: flex;                    /* Convierte el h2 en un contenedor flexible */
+  align-items: center;             /* Alinea verticalmente el ícono con el texto */
+  gap: 10px;                        /* Espacio entre el ícono y el texto */
+  justify-content: center;         /* Centra horizontalmente el contenido (ícono + texto) */
+  margin-bottom: 40px;             /* Espacio debajo del título para separarlo de las tarjetas */
+}
+
+/* Contenedor de todas las tarjetas */
+.contenedor-habilidades {
+  display: flex;                    /* Usa flexbox para acomodar las tarjetas */
+  flex-wrap: wrap;                 /* Permite que las tarjetas bajen a otra fila si no entran */
+  gap: 15px;                        /* Espacio entre las tarjetas */
+  justify-content: center;         /* Centra horizontalmente todas las tarjetas */
+}
+
+/* Cada tarjeta */
+.tarjeta-habilidad {
+  background-color: #f0f0f0;        /* Color de fondo gris claro */
+  padding: 15px 25px;               /* Espacio interno arriba/abajo (15px) y lados (25px) */
+  border-radius: 10px;              /* Bordes redondeados */
+  box-shadow: 2px 2px 10px rgba(0,0,0,0.1); /* Sombra suave para dar profundidad */
+  transition: transform 0.3s ease, background-color 0.3s ease; /* Transiciones suaves al pasar el mouse */
+  font-size: 1.2em;                 /* Tamaño del texto un poco más grande que lo normal */
+}
+
+.tarjeta-habilidad i {
+  margin-right: 10px; /* Espacio entre ícono y texto */
+  color: #1e8f2f; /* Verde, para que combine */
+}
+
+/* Animación al pasar el mouse */
+.tarjeta-habilidad:hover {
+  transform: scale(1.05);           /* Agranda un poco la tarjeta al pasar el cursor */
+  background-color: #c0fbca;        /* Cambia a un verde muy claro al pasar el cursor */
+  cursor: default;                  /* Cursor normal (no se convierte en mano clickeable) */
+}
+
+/* Sección general */
+.idiomas {
+  padding: 60px 20px;              /* Espaciado interno arriba/abajo y a los lados */
+  background-color: #000000;       /* Fondo blanco */
+  text-align: center;              /* Centra el texto */
+}
+
+/* Título con ícono (FontAwesome) */
+.idiomas h2 {
+  font-size: 2.3em;                /* Tamaño de fuente grande */
+  color: #1e8f2f;                  /* Color verde */
+  display: flex;                   /* Flexbox para alinear ícono + texto */
+  align-items: center;            /* Alineación vertical centrada */
+  gap: 10px;                       /* Espacio entre ícono y texto */
+  justify-content: center;        /* Centrado horizontal */
+  margin-bottom: 40px;            /* Espacio inferior */
+}
+
+/* Contenedor de cada idioma */
+.idioma {
+  margin-bottom: 25px;            /* Espacio entre idiomas */
+  max-width: 500px;               /* Ancho máximo */
+  margin-left: auto;              /* Centrado horizontal (izquierda) */
+  margin-right: auto;             /* Centrado horizontal (derecha) */
+}
+
+/* Subtítulo de idioma */
+.idioma h3 {
+  font-size: 1.3em;               /* Tamaño del subtítulo */
+  margin-bottom: 10px;           /* Espacio inferior */
+  color: #37218f;                 /* Color violeta */
+}
+
+/* Contenedor de la barra de nivel */
+.barra-nivel {
+  width: 100%;                    /* Ocupa todo el ancho disponible */
+  height: 20px;                   /* Alto de la barra */
+  background-color: #ddd;         /* Color gris claro de fondo */
+  border-radius: 10px;            /* Bordes redondeados */
+  overflow: hidden;               /* Oculta lo que se desborde */
+  box-shadow: inset 0 0 5px rgba(0,0,0,0.1); /* Sombra interior leve */
+}
+
+/* Barra interna que representa el nivel de idioma */
+.nivel {
+  height: 100%;                   /* Mismo alto que la barra exterior */
+  background-color: #1e8f2f;      /* Verde para representar el progreso */
+  transition: width 0.8s ease-in-out; /* Animación suave al cambiar el nivel */
+}
+
+/* Sección general de proyectos */
+.proyectos {
+  padding: 60px 20px; /* Espacio interior arriba/abajo y a los costados */
+  background-color: #000000; /* Fondo blanco */
+  text-align: center; /* Centra el texto */
+   border-top: 2px solid #e0e0e0; /* Línea divisoria con la sección anterior */
+}
+
+/* Título con ícono */
+.proyectos h2 {
+  font-size: 2.3em; /* Tamaño grande del título */
+  color: #1e8f2f; /* Verde oscuro */
+  display: flex; /* Alineación horizontal con ícono */
+  align-items: center; /* Centra verticalmente el ícono con el texto */
+  justify-content: center; /* Centra horizontalmente */
+  gap: 10px; /* Espacio entre ícono y texto */
+  margin-bottom: 40px; /* Espacio debajo del título */
+}
+
+/* Lista de proyectos */
+.proyectos ul {
+  list-style: disc inside; /* Viñetas dentro */
+  padding: 0;
+  max-width: 700px; /* Ancho máximo para que no se desborde */
+  margin: 0 auto; /* Centrado en la página */
+  text-align: left; /* Alinea el texto a la izquierda */
+}
+
+/* Cada ítem de la lista */
+.proyectos li {
+  background-color: #f0f0f0; /* Color de fondo gris claro */
+  padding: 15px 25px; /* Espacio interno arriba/abajo (15px) y lados (25px) */
+  border-radius: 10px; /* Bordes redondeados */
+  box-shadow: 2px 2px 10px rgba(0,0,0,0.1); /* Sombra suave para dar profundidad */
+  transition: transform 0.3s ease, background-color 0.3s ease; /* Transiciones suaves al pasar el mouse */
+  font-size: 1.2em; /* Tamaño del texto un poco más grande que lo normal */
+  margin-bottom: 25px; /* Espacio entre ítems */
+  font-size: 1.1em;
+  color: #131313;
+}
+
+
+/* Contenedor de las imágenes */
+.imagenes-proyectos {
+  display: flex; /* Las pone en fila */
+  flex-wrap: wrap; /* Si no entran, bajan a otra fila */
+  justify-content: center; /* Centra horizontalmente */
+  gap: 20px; /* Espacio entre imágenes */
+  margin: 20px 0; /* Espacio arriba y abajo de las imágenes */
+}
+
+/* Estilo a las imágenes */
+.imagenes-proyectos img {
+  width: 300px; /* Ancho fijo */
+  border-radius: 10px; /* Bordes redondeados */
+  transition: transform 0.3s ease; /* Animación al pasar el mouse */
+}
+
+/* Efecto al pasar el mouse */
+.imagenes-proyectos img:hover {
+  transform: scale(1.05); /* Agranda un poco la imagen */
+  cursor: pointer; /* Cambia el cursor */
+}
+
+.proyectos li:hover {
+  transform: scale(1.05);           /* Agranda un poco la tarjeta al pasar el cursor */
+  background-color: #c0fbca;        /* Cambia a un verde muy claro al pasar el cursor */
+  cursor: default;                  /* Cursor normal (no se convierte en mano clickeable) */
+}
+
+/* Sección de referencias */
+.referencia {
+  padding: 60px 20px; /* Espaciado interno */
+  background-color: #000000; /* Fondo blanco */
+  text-align: center; /* Centra el título */
+}
+
+/* Título con ícono */
+.referencia h2 {
+  font-size: 2.3em; /* Tamaño del título */
+  color: #1e8f2f; /* Verde, como las demás secciones */
+  display: flex; /* Para alinear ícono y texto */
+  align-items: center; /* Centrado vertical */
+  gap: 10px; /* Espacio entre ícono y texto */
+  justify-content: center; /* Centrado horizontal */
+  margin-bottom: 40px; /* Espacio debajo del título */
+}
+
+/* Lista de referencias */
+.referencia ul {
+  background-color: #f0f0f0;        /* Color de fondo gris claro */
+  padding: 15px 25px;               /* Espacio interno arriba/abajo (15px) y lados (25px) */
+  border-radius: 10px;              /* Bordes redondeados */
+  box-shadow: 2px 2px 10px rgba(0,0,0,0.1); /* Sombra suave para dar profundidad */
+  font-size: 1.2em;                 /* Tamaño del texto un poco más grande que lo normal */
+  list-style: disc inside; /* Viñetas visibles */
+  text-align: left; /* Alinea los ítems a la izquierda */
+  max-width: 600px; /* Ancho máximo del bloque */
+  margin: 0 auto; /* Centrado del bloque */
+  font-size: 1.1em; /* Tamaño de texto */
+}
+
+/* Cada ítem */
+.referencia li {
+  padding: 10px 0;
+  line-height: 1.6;
+  color: #331993; /* Color de texto */
+}
+
+/* Mantener tu footer original */
+footer.contacto {
+  padding: 50px 20px;                 /* Espacio interno: 50px arriba/abajo, 20px izquierda/derecha */
+  background-color: #1e8f2f;          /* Fondo verde oscuro */
+  color: white;                       /* Color del texto blanco */
+  text-align: center;                 /* Centrar texto dentro del footer */
+  border-top: 2px solid #e0e0e0;     /* Línea superior gris clara para separar visualmente */
+}
+
+/* Título con ícono */
+footer.contacto h2 {
+  font-size: 2em;                     /* Tamaño de fuente grande para el título */
+  margin-bottom: 30px;                /* Espacio debajo del título */
+  display: flex;                     /* Usamos flexbox para alinear ícono y texto */
+  justify-content: center;           /* Centrar horizontalmente */
+  align-items: center;               /* Centrar verticalmente */
+  gap: 10px;                        /* Espacio entre el ícono y el texto */
+}
+
+/* Contenedor principal que agrupa contactos y formulario */
+.footer-contenido {
+  display: flex;                    /* Flexbox para poner contenido en fila */
+  justify-content: center;          /* Centrar el contenido horizontalmente */
+  gap: 40px;                       /* Espacio entre los bloques (contactos y formulario) */
+  flex-wrap: wrap;                 /* Permite que los elementos bajen de línea si no caben */
+  max-width: 1000px;               /* Ancho máximo para no ocupar toda la pantalla */
+  margin: 0 auto;                  /* Centrar horizontalmente el contenedor */
+  text-align: left;                /* Alineación de texto a la izquierda dentro del contenedor */
+}
+
+/* Mantener diseño actual de contactos */
+.contactos {
+  display: flex;                   /* Flexbox para los botones de contacto */
+  flex-wrap: wrap;                 /* Permite que los botones bajen de línea si es necesario */
+  justify-content: center;         /* Centrar botones horizontalmente */
+  gap: 15px;                      /* Separación entre botones */
+  flex: 1 1 300px;                /* Flex-grow: 1 (crece si hay espacio), flex-shrink: 1 (se reduce si hace falta), base 300px */
+}
+
+/* Cada botón ya está definido (no tocar) */
+
+/* Nuevo diseño para formulario */
+.formulario-contacto {
+  background-color: white;         /* Fondo blanco para destacar formulario */
+  color: #1e8f2f;                  /* Color texto verde */
+  padding: 10px 25px;              /* Espacio interno alrededor del contenido del formulario */
+  border-radius: 12px;             /* Bordes redondeados */
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2); /* Sombra sutil para dar profundidad */
+  flex: 1 1 350px;                 /* Flexible: puede crecer o reducirse, base de 350px */
+  max-width: 500px;                /* Ancho máximo para el formulario */
+  font-family: inherit;            /* Hereda la tipografía del padre */
+}
+
+/* Etiquetas */
+.formulario-contacto label {
+  display: block;                  /* Etiquetas en bloque para que ocupen línea completa */
+  margin-bottom: 6px;              /* Espacio debajo de cada etiqueta */
+  font-weight: 600;                /* Fuente seminegrita */
+  font-size: 1em;                 /* Tamaño de fuente estándar */
+}
+
+/* Inputs y textarea */
+.formulario-contacto input,
+.formulario-contacto textarea {
+  width: 97%;                     /* Ocupan casi todo el ancho del contenedor */
+  padding: 8px 10px;              /* Espacio interno para escribir cómodo */
+  margin-bottom: 15px;            /* Separación debajo de cada campo */
+  border: 1px solid #ccc;         /* Borde gris claro */
+  border-radius: 8px;             /* Bordes redondeados */
+  font-size: 1em;                 /* Tamaño de fuente estándar */
+  font-family: inherit;           /* Hereda tipografía */
+  resize: vertical;               /* Permite redimensionar solo verticalmente el textarea */
+  color: #1e8f2f;                 /* Color de texto verde */
+}
+
+/* Botón enviar */
+.formulario-contacto button {
+  background-color: #1e8f2f;      /* Fondo verde oscuro */
+  color: white;                   /* Texto blanco */
+  border: none;                  /* Sin borde */
+  padding: 10px 18px;            /* Espacio interno */
+  border-radius: 8px;            /* Bordes redondeados */
+  font-weight: 700;              /* Fuente negrita */
+  cursor: pointer;               /* Cambia cursor a mano al pasar */
+  transition: background-color 0.3s ease; /* Transición suave para cambio de color */
+}
+
+/* Hover botón enviar */
+.formulario-contacto button:hover {
+  background-color: #166922;     /* Verde más oscuro cuando pasas el cursor */
+}
+
+/* Responsive para pantallas pequeñas */
+@media (max-width: 700px) {
+  .footer-contenido {
+    flex-direction: column;      /* Apilar los bloques uno debajo de otro */
+    align-items: center;         /* Centrar contenido horizontalmente */
+  }
+  
+  .contactos, .formulario-contacto {
+    flex: none;                  /* Quitamos flex para que no cambien tamaño */
+    max-width: 100%;             /* Ocupan todo el ancho disponible */
+  }
+}
+
+/* Cambiamos el contenedor de contactos para que sea columna */
+.contactos {
+  display: flex;                   /* Flexbox */
+  flex-direction: column;          /* Los botones apilados verticalmente */
+  gap: 15px;                      /* Separación vertical entre botones */
+  flex: 1 1 250px;                /* Flex con base 250px */
+}
+
+/* Cambiamos el fondo de cada botón contacto a azul marino */
+.contacto-item {
+  background-color: #001f3f;       /* Fondo azul marino oscuro */
+  color: white;                   /* Texto blanco */
+  padding: 15px 20px;             /* Espacio interno */
+  border-radius: 12px;            /* Bordes redondeados */
+  font-size: 1.1em;               /* Tamaño de fuente un poco más grande */
+  display: flex;                  /* Flex para alinear icono y texto */
+  align-items: center;            /* Centrar verticalmente */
+  gap: 10px;                     /* Separación entre icono y texto */
+  transition: background-color 0.3s ease, color 0.3s ease; /* Transición suave para hover */
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2); /* Sombra para dar profundidad */
+  text-decoration: none;          /* Sin subrayado en enlaces */
+}
+
+/* Hover con color de fondo celeste y texto azul oscuro */
+.contacto-item:hover {
+  background-color: #0074D9;      /* Azul celeste cuando pasas el cursor */
+  color: #001f3f;                 /* Texto azul marino oscuro */
+  transform: translateX(5px);     /* Desplaza ligeramente a la derecha */
+}
